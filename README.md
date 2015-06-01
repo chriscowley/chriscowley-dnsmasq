@@ -16,7 +16,7 @@
 ## Overview
 
 Really simple module to install and configure DNSmasq. Tested on CentOS 6, but
-but should be fine on others too (it is really simple). 
+but should be fine on others too (it is really simple).
 
 ## Module Description
 
@@ -32,7 +32,7 @@ In
 ### Setup Requirements **OPTIONAL**
 
 DNSmasq is basically a method to share your `/etc/hosts` file. As such some
-method to control that is recommended. I have 
+method to control that is recommended. I have
 [a module](https://github.com/chriscowley/chriscowley-etchosts) that does
 that.
 

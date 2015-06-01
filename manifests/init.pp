@@ -16,14 +16,14 @@
 #
 # === Copyright
 #
-# Copyright 2015 
+# Copyright 2015
 #
 class dnsmasq (
   $package_name = $dnsmasq::params::package_name,
   $service_name = $dnsmasq::params::service_name,
 ) inherits ::dnsmasq::params  {
-  class { '::dnsmasq::install': } ->
-  class { '::dnsmasq::config': } ~>
-  class { '::dnsmasq::service': } ->
-  Class[ '::dnsmasq']
+  class { 'dnsmasq::install': } ->
+  class { 'dnsmasq::config': } ~>
+  class { 'dnsmasq::service': } ->
+  Class[ 'dnsmasq']
 }
